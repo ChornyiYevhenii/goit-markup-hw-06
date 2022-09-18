@@ -290,18 +290,41 @@ nav {
   position: absolute;
   top: 8px;
   right: 8px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   width: 30px;
   height: 30px;
-
   background: var(--modal-fich);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
 }
+
+/* Проверить!!!!!! */
+
+/* .modal-btn:hover,
+.modal-btn:focus {
+  color: aqua;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: var(--modal-fich);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+} */
+/* Проверить!!!!!! */
+
 /* .section-feature {
 } */
 
