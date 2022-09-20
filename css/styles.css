@@ -290,6 +290,7 @@ nav {
   position: absolute;
   top: 8px;
   right: 8px;
+  color: rgba(0, 0, 0, 1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,31 +300,13 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Проверить!!!!!! */
-
-/* .modal-btn:hover,
+.modal-btn:hover,
 .modal-btn:focus {
-  color: aqua;
+  color: var(--color-button-text);
 }
-
-.modal-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  color: pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background: var(--modal-fich);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-} */
-/* Проверить!!!!!! */
 
 /* .section-feature {
 } */
@@ -393,7 +376,7 @@ nav {
   font-size: 20px;
   margin-bottom: 12px;
   color: var(--color-text);
-  line-height: 23px;
+  line-height: calc(23 / 20);
   letter-spacing: 0.03em;
 }
 
@@ -406,15 +389,20 @@ nav {
   display: block;
   margin-bottom: 10px;
 }
+.register-form-field:last-child {
+  margin-bottom: 0;
+}
 
 .register-form-label {
   display: block;
   font-size: 12px;
   margin-bottom: 4px;
+  line-height: calc(14 / 12);
 }
 
 .register-form-input {
   width: 100%;
+  display: block;
   height: 40px;
   padding-left: 42px;
   padding-right: 42px;
@@ -480,6 +468,15 @@ nav {
 
 .register-form-checkbox:checked + .register-form-icons .icon-checked {
   opacity: 1;
+}
+
+.register-form-checkbox:focus + .register-form-icons,
+.register-form-checkbox:hover + .register-form-icons {
+  fill: var(--act-button);
+}
+
+.register-form-checkbox + .register-form-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-unchecked {
   transition: opacity 400ms;
